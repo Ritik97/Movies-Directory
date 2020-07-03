@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MovieDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/movieImageIdDet"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/movieTitleIdDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Movie Title"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movieReleaseIdDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieTitleIdDet"
+                android:layout_toRightOf="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Release Date: " />
+
+            <TextView
+                android:id="@+id/movieCategoryIdDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieReleaseIdDet"
+                android:layout_toRightOf="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Category: " />
+
+            <TextView
+                android:id="@+id/movieRatingDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieCategoryIdDet"
+                android:layout_toRightOf="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Rating: " />
+
+            <TextView
+                android:id="@+id/movieRuntimeDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieRatingDet"
+                android:layout_toRightOf="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Runtime: " />
+
+            <TextView
+                android:id="@+id/movieDirectedByDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:text="Directed By : " />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.009"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewDet"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/actorsDet"
+            android:text="Actors: "
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/writersDet"
+            android:padding="5dp"
+            android:layout_below="@+id/actorsDet"
+            android:text="Writers: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/plotDet"
+            android:padding="5dp"
+            android:layout_below="@+id/writersDet"
+            android:text="Plot: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/boxOfficeDet"
+            android:padding="5dp"
+            android:layout_below="@+id/plotDet"
+            android:text="Box Office: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

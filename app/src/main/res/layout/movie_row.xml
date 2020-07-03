@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/movie_image_id"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/movie_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/movie_image_id"
+                android:paddingLeft="5dp"
+                android:text="Movie Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_release_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_title_id"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/movie_image_id"
+                android:paddingLeft="5dp"
+                android:text="Released: " />
+
+            <TextView
+                android:id="@+id/movie_cat_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_release_id"
+                android:layout_toRightOf="@+id/movie_image_id"
+                android:paddingLeft="5dp"
+                android:text="Category" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
